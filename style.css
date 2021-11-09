@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%!important;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #ffffffee;
+
+}
+
+header ul {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+header ul li a {
+    color: #744919;
+}
+
+header .icon-2 {
+    display: grid;
+    place-items: center;
+
+}
+
+header .icon-1 img {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.sec-1 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/beeceeper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-1 h2 {
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.sec-2 {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    place-items: center;
+    width: 100%;
+    height: 90vh;
+
+}
+
+.sec-2 ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 3rem;
+}
+
+.sec-2 ul li a img {
+    width: 310px;
+    height: 310px;
+}
+
+.sec-2 ul li {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    place-items: center;
+    gap: 2rem;
+}
+
+.sec-2 ul li button {
+    padding: 10px;
+    width: 310px;
+    color: #ff7900;
+    background-color: #ffffff;
+    border: solid 1px #ff7900;
+    border-radius: 5px;
+}
+
+.sec-2 ul li button:hover {
+    color: #ffffff;
+    background-color: #ff7900;
+    border: solid 1px #ffffff;
+}
+
+.sec-3 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/STRAIGHT_FROM_THE_HIVE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-3 h2 {
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.vidio iframe {
+    width: 95%;
+    margin: 2.5%;
+}
