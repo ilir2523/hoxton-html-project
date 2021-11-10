@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Project</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/pages/about.html">About</a></li>
             <li><a href="/pages/shop.html">Shop</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
             <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
         <div class="icon-2">
@@ -31,29 +32,245 @@
     <main>
         <div class="about-main">
             <div class="page-title">
-                <h1>ABOUT</h1>
+                <h1>SHOP</h1>
             </div>
 
-            <section class="section-1">
-                <img src="/images/Pollen_Bee_800x800.png" alt="" height="500px">
-                <div class="text">
-                    <h2>OUR HISTORY</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatibus ab odio ea ut modi sed laboriosam et deserunt exercitationem vel sequi enim fugit perspiciatis, impedit dignissimos aut molestias voluptas.
-                    </p>
+            <section class="shop-section-1" id="shop_honey">
+                <img src="/images/product.jpg" alt="" height="500px">
+                <div class="shop-section-text">
+                    <div class="shop-section-text-header">
+                        <h2>Natural Honey</h2>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <span class="price">€15</span>
+                    <div class="shop-section-text-discription">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo optio nostrum cum esse sunt eligendi excepturi, inventore distinctio adipisci id eos, nesciunt possimus temporibus consequatur blanditiis consequuntur facilis. Harum.
+                        </p>
+                    </div>
+                    <div class="shop-section-text-buy">
+                        <form>
+                            <label for="size">
+                                <strong>Size *</strong> 
+                                <br>
+                                500gr <input type="checkbox" id="size" value="500gr" name="honey"> 
+                                1kg<input type="checkbox" id="size" value="1kg" name="honey" required>
+                            </label>
+                            <label for="quantity">
+                                <strong>Quantity:</strong>  
+                                <br>
+                                <input type="number" id="quantity" min="1" max="1000" name="quantity" required>
+                            </label>
+                            <input class="add" type="submit" value="ADD TO CART">
+                        </form>
+                    </div>
                 </div>
             </section>
             
+            <section class="shop-section-1" id="shop_polen">
+                <img src="/images/polen.jpg" alt="" height="500px">
+                <div class="shop-section-text">
+                    <div class="shop-section-text-header">
+                        <h2>Bee Polen</h2>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <span class="price">€15</span>
+                    <div class="shop-section-text-discription">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo optio nostrum cum esse sunt eligendi excepturi, inventore distinctio adipisci id eos, nesciunt possimus temporibus consequatur blanditiis consequuntur facilis. Harum.
+                        </p>
+                    </div>
+                    <div class="shop-section-text-buy">
+                        <form>
+                            <label for="size">
+                                <strong>Size *</strong> 
+                                <br>
+                                500gr <input type="checkbox" id="size" value="500gr" name="polen" required> 
+                                1kg<input type="checkbox" id="size" value="1kg" name="polen" >
+                            </label>
+                            <label for="quantity">
+                                <strong>Quantity:</strong>  
+                                <br>
+                                <input type="number" id="quantity" min="1" max="1000" name="quantity" required>
+                            </label>
+                            <input class="add" type="submit" value="ADD TO CART">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-section-1" id="shop_beewax">
+                <img src="/images/honeybee-wax.jpg" alt="" height="500px">
+                <div class="shop-section-text">
+                    <div class="shop-section-text-header">
+                        <h2>Bee Wax</h2>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <span class="price">€8</span>
+                    <div class="shop-section-text-discription">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo optio nostrum cum esse sunt eligendi excepturi, inventore distinctio adipisci id eos, nesciunt possimus temporibus consequatur blanditiis consequuntur facilis. Harum.
+                        </p>
+                    </div>
+                    <div class="shop-section-text-buy">
+                        <form>
+                            <label for="size">
+                                <strong>Size *</strong> 
+                                <br>
+                                1kg<input type="checkbox" id="size" value="1kg" name="Wax" required>
+                            </label>
+                            <label for="quantity">
+                                <strong>Quantity:</strong>  
+                                <br>
+                                <input type="number" id="quantity" min="1" max="1000" name="quantity" required>
+                            </label>
+                            <input class="add" type="submit" value="ADD TO CART">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-section-1" id="shop_beemilk">
+                <img src="/images/bee-milk.png" alt="" height="500px">
+                <div class="shop-section-text">
+                    <div class="shop-section-text-header">
+                        <h2>Bee Milk</h2>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <span class="price">€200</span>
+                    <div class="shop-section-text-discription">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo optio nostrum cum esse sunt eligendi excepturi, inventore distinctio adipisci id eos, nesciunt possimus temporibus consequatur blanditiis consequuntur facilis. Harum.
+                        </p>
+                    </div>
+                    <div class="shop-section-text-buy">
+                        <form>
+                            <label for="size">
+                                <strong>Size *</strong> 
+                                <br>
+                                10gr <input type="checkbox" id="size" value="10gr" name="BeeMilk" required> 
+                            </label>
+                            <label for="quantity">
+                                <strong>Quantity:</strong>  
+                                <br>
+                                <input type="number" id="quantity" min="1" max="1000" name="quantity" required>
+                            </label>
+                            <input class="add" type="submit" value="ADD TO CART">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-section-1" id="shop_propolis">
+                <img src="/images/honeybee-propolis.jpg" alt="" height="500px">
+                <div class="shop-section-text">
+                    <div class="shop-section-text-header">
+                        <h2>Propolis</h2>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <span class="price">€20</span>
+                    <div class="shop-section-text-discription">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo optio nostrum cum esse sunt eligendi excepturi, inventore distinctio adipisci id eos, nesciunt possimus temporibus consequatur blanditiis consequuntur facilis. Harum.
+                        </p>
+                    </div>
+                    <div class="shop-section-text-buy">
+                        <form>
+                            <label for="size">
+                                <strong>Size *</strong> 
+                                <br>
+                                500gr <input type="checkbox" id="size" value="500gr" name="Propolis" required > 
+                                1kg<input type="checkbox" id="size" value="1kg" name="Propolis">
+                            </label>
+                            <label for="quantity">
+                                <strong>Quantity:</strong>  
+                                <br>
+                                <input type="number" id="quantity" min="1" max="1000" name="quantity" required>
+                            </label>
+                            <input class="add" type="submit" value="ADD TO CART">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop-section-1" id="shop_beehive">
+                <img src="/images/beehive-box.jpg" alt="" height="500px">
+                <div class="shop-section-text">
+                    <div class="shop-section-text-header">
+                        <h2>Bee Hive</h2>
+                        <div class="review">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                    <span class="price">€170</span>
+                    <div class="shop-section-text-discription">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nemo optio nostrum cum esse sunt eligendi excepturi, inventore distinctio adipisci id eos, nesciunt possimus temporibus consequatur blanditiis consequuntur facilis. Harum.
+                        </p>
+                    </div>
+                    <div class="shop-section-text-buy">
+                        <form>
+                            <label for="quantity">
+                                <strong>Quantity:</strong>  
+                                <br>
+                                <input type="number" id="quantity" min="1" max="1000" name="quantity" required>
+                            </label>
+                            <input class="add" type="submit" value="ADD TO CART">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
-        <footer>
+        <footer id="footer">
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/pages/">About</a></li>
-                    <li><a href="/pages/">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="/pages/">Contact</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/shop.html">Shop</a></li>
+                    <li><a href="/pages/blog.html">Blog</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <hr>
