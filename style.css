@@ -279,7 +279,7 @@ main .section-2 {
     width: 50%;
     height: 75%;
     display: block;
-    background: url(https://cdn.shopify.com/s/files/1/0276/0261/6394/t/2/assets/pattern-sm.png?207) no-repeat;
+    background: url(/images/pattern-sm.png) no-repeat;
     background-size: cover;
     position: absolute;
     bottom: -15%;
