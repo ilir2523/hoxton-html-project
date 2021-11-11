@@ -394,3 +394,106 @@ main .section-2 {
     background-color: #ffffff;
     color: #232323;
 }
+
+.login-chechbox:checked ~ .login-opener {
+    background-color: #ff7900;
+}
+
+
+/* login */
+
+.login {
+    width: 300px;
+    border: solid 1px black;
+    display: grid;
+    grid-auto-flow: row;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    gap: 1rem;
+    background-color: #ffffff;
+}
+
+.login form {
+    display: grid;
+    grid-auto-flow: row;
+    gap: .5rem;
+}
+
+.login h2 {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #232323;
+}
+
+.login form label {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login form input {
+    padding: 10px;
+    border: .5px solid grey;
+}
+
+.login form .button-login {
+    width: 60%;
+    padding: .5rem;
+    color: #232323;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #232323;
+    margin: 10px 0 0 20%;
+}
+
+.login form .button-login:hover {
+    padding: .5rem;
+    color: #ffffff;
+    background-color: #232323;
+    transition: 0.3s;
+}
+
+.login a.forgotpass {
+    font-size: 13px;
+    color: #232323;
+    text-align: center;
+    font-weight: 200;
+}
+
+.login a.btn-singin {
+    border: solid 1px #232323;
+    text-align: center;
+    padding: .5rem;
+    color: #ffffff;
+    background-color: #232323;
+}
+
+.login a.btn-singin:hover {
+    text-align: center;
+    padding: .5rem;
+    color: #232323;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.login-wraper {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    visibility: hidden;
+
+    background-color: #00000020;
+    display: grid;
+    place-items: start right;
+    backdrop-filter: blur(10px);
+
+    /* z-index: 20; */
+}
+
+
+.login-chechbox:checked ~ .login-wraper {
+    visibility: visible!important;
+}
