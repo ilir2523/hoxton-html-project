@@ -21,7 +21,20 @@
         </ul>
         <div class="icon-2">
             <ul>
-                <li><a href="#"><img src="/images/search_black_24dp.svg"></a></li>
+                <li>
+                    <input class="search-chechbox" type="checkbox" id="search-chechbox" hidden>
+                    <label class="search-opener" for="search-chechbox"><img src="/images/search_black_24dp.svg"></label>
+                    <div class="search-wraper">
+                        <div class="search">
+                            <form action="">
+                                <input class="searchbox" type="search" name="search" id="search" placeholder="Search">
+                                <input type="submit" name="search-submit" id="search-submit" value="Search" hidden>
+                                <label for="search-submit"><img src="/images/search_black_24dp.svg"></label></label>
+                            </form>
+                            <label class="close-search-chechbox" for="search-chechbox">X</label>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <!-- <input class="login-chechbox" type="checkbox" id="login-chechbox" hidden>
                     <label class="login-opener" for="login-chechbox"><img src="/images/account_circle_black_24dp.svg"></label>
