@@ -546,10 +546,11 @@ main.singin {
 
 form .searchbox {
     padding: 15px;
-    width: 400px;
+    width: 100%;
     border: none;
     outline: none;
     background-color: #f8f8f8;
+    margin: 0 100px;
 }
 
 .close-search-chechbox {
