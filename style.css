@@ -510,3 +510,8 @@ main .section-2 {
 .login-chechbox:checked ~ .login-wraper {
     visibility: visible!important;
 }
+
+main.singin {
+    width: 80%;
+    margin-left: 10%;
+}
