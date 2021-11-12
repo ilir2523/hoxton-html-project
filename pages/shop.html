@@ -23,7 +23,26 @@
         <div class="icon-2">
             <ul>
                 <li><a href="#"><img src="/images/search_black_24dp.svg"></a></li>
-                <li><a href="#"><img src="/images/account_circle_black_24dp.svg"></a></li>
+                <li>
+                    <input class="login-chechbox" type="checkbox" id="login-chechbox" hidden>
+                    <label class="login-opener" for="login-chechbox"><img src="/images/account_circle_black_24dp.svg"></label>
+                    <div class="login-wraper">
+                        <div class="login">
+                            <label class="close-btn" for="login-chechbox">X Close</label>
+                            <h2>Costumer Login:</h2>
+                            <hr>
+                            <form>
+                                <label for="email-login">Email Address *</label>
+                                <input type="email" name="email-login" placeholder="Email Address">
+                                <label for="password-login">Password *</label>
+                                <input type="password" name="password-login" placeholder="Password">
+                                <input class="button-login" type="submit" value="Login" name="btn-login">
+                            </form>
+                            <a href="#forgot" class="forgotpass">Forgot your password?</a>
+                            <a href="/pages/sing-in.html" class="btn-singin"> Create an Account</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
         
